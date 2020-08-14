@@ -7,5 +7,13 @@ function myFunction(word1,word2) {
 	return false;
 }
 
+function myFunction(word1,word2) {
+	if(word1.length === word2.length && word1.split("").sort() === word2.split("").sort()){
+		return true;
+	}
+	return false;
+}
+
+
 
 
