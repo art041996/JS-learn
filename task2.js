@@ -1,9 +1,1 @@
-function myFunction(x){
-	try {
-	    if(typeof x === "undefined") throw "not found or undefined";
-	  }
-	catch(err) {
-   	 return "argument is " + err;
- 	}
-	return x
-  }
+const argumentCheck = (value) =>  ( (typeof value === "undefined") ?  ( new Error("Have not passed the param:value") ) : value )
